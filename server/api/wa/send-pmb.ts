@@ -20,19 +20,31 @@ export default defineEventHandler(async (event) => {
     noWa,
   });
 
+  const timestamp = new Date().toLocaleString("id-ID", {
+    timeZone: "Asia/Jakarta",
+  });
+
   // 2️⃣ Kirim WA ke user
-  const userMessage = `📌 *KONFIRMASI PENDAFTARAN PMB*
-STIKes Bogor Husada
+  const userMessage = `Halo *${nama}*, salam sehat! 👋
 
-Berikut data Anda:
-👤 Nama : ${nama}
-🏫 Asal Sekolah : ${asalSekolah}
-🎓 Minat Prodi : ${minatProdi}
-📱 WhatsApp : ${noWa}
+Selamat! Kamu telah berhasil melakukan klaim *Voucer Promo SNBT* di STIKes Bogor Husada. 🎉
 
-Tim PMB akan menghubungi Anda maksimal *1x24 jam*.
+✅ Berikut adalah rincian data pendaftaran kamu:
+🎓 Minat Program Studi: *${minatProdi}*
+🏫 Asal Sekolah: *${asalSekolah}*
+📱 Nomor WhatsApp: *${noWa}*
+🕒 Waktu Klaim: *${timestamp}*
 
-🙏 Terima kasih`;
+🎁 Keuntungan spesial dari Voucer SNBT yang kamu dapatkan:
+* Potongan Biaya Kuliah Spesial Gelombang 1
+* Kesempatan Gratis Laptop
+* Bebas Tes Tulis
+* Gratis Biaya Pendaftaran
+
+Data kamu sudah terdata aman di sistem Penerimaan Mahasiswa Baru kami. Tim Admin PMB akan segera menghubungi kamu untuk panduan langkah selanjutnya.
+
+Jika ada yang ingin ditanyakan, jangan ragu untuk membalas pesan ini kapan saja.
+Wujudkan masa depanmu sebagai tenaga kesehatan profesional bersama STIKes Bogor Husada! 🩺✨`;
 
   await sendWablasMessage(noWa, userMessage);
 
