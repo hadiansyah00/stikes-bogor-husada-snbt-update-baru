@@ -22,7 +22,7 @@
 import { onMounted } from "vue";
 
 useHead({
-  title: "Penerimaan Mahasiswa Baru STIKes Bogor Husada",
+  title: "SNBT 2026  | Penerimaan Calon Mahasiswa Baru STIKes Bogor Husada",
   meta: [
     {
       name: "description",
