@@ -20,21 +20,30 @@ export async function appendPmbLead(data: {
     timeZone: "Asia/Jakarta",
   });
 
-  await sheets.spreadsheets.values.append({
-    spreadsheetId: config.GS_SPREADSHEET_ID,
-    range: "Sheet1!A:F", // sesuaikan nama sheet
-    valueInputOption: "USER_ENTERED",
-    requestBody: {
-      values: [
-        [
-          now,
-          data.nama,
-          data.asalSekolah,
-          data.minatProdi,
-          data.noWa,
-          "Landing PMB",
+  try {
+    await sheets.spreadsheets.values.append({
+      spreadsheetId: config.GS_SPREADSHEET_ID,
+      range: "Sheet1!A:F", // sesuaikan nama sheet
+      valueInputOption: "USER_ENTERED",
+      requestBody: {
+        values: [
+          [
+            now,
+            data.nama,
+            data.asalSekolah,
+            data.minatProdi,
+            data.noWa,
+            "Landing PMB",
+          ],
         ],
-      ],
-    },
-  });
+      },
+    });
+  } catch (error: any) {
+    console.error("Gagal insert ke Google Sheets:", error.message || error);
+    throw createError({
+      statusCode: 500,
+      statusMessage: "Terjadi kesalahan saat menyimpan data ke Spreadsheet",
+      data: error.message,
+    });
+  }
 }
