@@ -5,12 +5,10 @@
         class="flex flex-col items-center justify-center p-8 text-center bg-white shadow-lg rounded-2xl md:p-12"
       >
         <h2 class="mb-4 text-3xl font-bold text-gray-800">
-          Mari Bergabung Bersama Kami!
+          Dapatkan Tiket Beasiswa Kuliahmu Sekarang !
         </h2>
         <p class="mb-8 text-gray-600 md:text-lg">
-          Jangan lewatkan kesempatan ini. Segera hubungi admin untuk konsultasi
-          atau langsung isi formulir untuk mengamankan kuota dan promo laptop
-          Anda.
+Hanya untuk Pendaftar Tercepat! Jangan biarkan kartu SNBT/SNBP Anda sia-sia. Segera isi formulir di bawah ini untuk menukarkannya dengan Tiket Beasiswa dan klaim promo laptop gratis Anda sebelum kuota penuh.
         </p>
 
         <div class="flex flex-col w-full gap-4 sm:flex-row sm:justify-center">
@@ -19,7 +17,7 @@
             class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-base font-bold text-white transition bg-gradient-to-br from-orange-500 to-orange-600 shadow-md hover:from-orange-600 hover:to-orange-700 rounded-xl"
           >
             <Icon icon="mdi:laptop" class="w-5 h-5 text-white" />
-            Amankan Laptop - Ke Formulir
+            Daftar & Amankan Beasiswa
           </a>
 
           <a

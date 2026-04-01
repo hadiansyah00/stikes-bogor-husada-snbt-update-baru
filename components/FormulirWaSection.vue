@@ -50,12 +50,9 @@ async function onSubmit() {
     <div class="container max-w-4xl px-6 mx-auto lg:px-12">
       <div class="mb-12 text-center">
         <h2 class="text-3xl font-bold text-gray-800 lg:text-4xl">
-          Cek Info Biaya Kuliah & Amankan Promo Laptop Gratis!
-        </h2>
+Isi Data untuk Menukar Kartu SNBT/SNBP Jadi Tiket Beasiswa        </h2>
         <p class="max-w-xl mx-auto mt-4 text-gray-600">
-          Isi data singkat ini supaya admin kami bisa mengirimkan info biaya
-          kuliah, jalur masuk, dan cara mengamankan promo Laptop Gratis sebelum
-          kuota habis.
+          Lengkapi data di bawah ini agar kami dapat memproses data kelulusan Anda dan mengubahnya menjadi penawaran Beasiswa Kuliah.
         </p>
       </div>
 
